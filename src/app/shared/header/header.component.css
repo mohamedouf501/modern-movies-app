@@ -1,0 +1,37 @@
+header .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0.5rem 1rem;
+  height: 65px;
+  background-color: #212121;
+  margin: 0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+header .navbar-logo {
+  display: block;
+}
+
+header .navbar-logo img {
+  width: 60px;
+}
+
+header .navbar-links {
+  display: block;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+header .navbar-links li {
+  display: inline;
+  margin-right: 15px;
+}
+/*# sourceMappingURL=header.component.css.map */
