@@ -20,6 +20,9 @@ import {TabViewModule} from 'primeng/tabview';
 import { VideoEmbedComponent } from './components/video-embed/video-embed.component';
 import {ImageModule} from 'primeng/image';
 import {CarouselModule} from 'primeng/carousel';
+import {InputTextModule} from 'primeng/inputtext';
+import { FormsModule } from '@angular/forms';
+import { TirmPipe } from './pips/tirm.pipe';
 
 @NgModule({
   declarations: [
@@ -34,7 +37,8 @@ import {CarouselModule} from 'primeng/carousel';
     ItemsBannerComponent,
     MovieItemComponent,
     MovieComponent,
-    VideoEmbedComponent
+    VideoEmbedComponent,
+    TirmPipe
   ],
   imports: [
     BrowserModule,
@@ -44,7 +48,9 @@ import {CarouselModule} from 'primeng/carousel';
     PaginatorModule,
     TabViewModule,
     ImageModule,
-    CarouselModule
+    CarouselModule,
+    InputTextModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

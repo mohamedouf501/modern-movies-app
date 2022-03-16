@@ -1,1 +1,10 @@
-<p>genres works!</p>
+<div>
+  <h1>Movies Genres</h1>
+  <div class="grid">
+  <div *ngFor="let Genre of genres" class="col-12 md:col-6 lg:col-2">
+    <a [routerLink]="['/movies/genres' ,  Genre.id]" class="genre-link" > 
+        {{Genre.name}}
+    </a>
+  </div>
+</div>
+</div>
