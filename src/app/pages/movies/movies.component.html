@@ -1,1 +1,11 @@
-<p>movies works!</p>
+<div class="m-1 p-1">
+    <div class="grid">
+      <div class="col-12 lg:col-3 md:col-6" *ngFor="let item of movies">
+      <item [itemData]="item" ></item>
+    </div>
+    </div>
+    <div>
+        <p-paginator [rows]="10" [totalRecords]="500" (onPageChange)="paginate($event)"></p-paginator>
+    </div>
+  </div>
+  

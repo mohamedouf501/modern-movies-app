@@ -1,0 +1,8 @@
+<div class="m-1 p-1">
+  <h2>{{title}}</h2>
+  <div class="grid">
+    <div class="col-12 lg:col-2 md:col-6" *ngFor="let item of items">
+    <item [itemData]="item"></item>
+  </div>
+  </div>
+</div>

@@ -11,6 +11,15 @@ import { TvShowsComponent } from './pages/tv-shows/tv-shows.component';
 import { GenresComponent } from './pages/genres/genres.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SliderComponent } from './components/slider/slider.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ItemsBannerComponent } from './components/items-banner/items-banner.component';
+import { MovieItemComponent } from './components/item/item.component';
+import { PaginatorModule } from 'primeng/paginator';
+import { MovieComponent } from './pages/movie/movie.component';
+import {TabViewModule} from 'primeng/tabview';
+import { VideoEmbedComponent } from './components/video-embed/video-embed.component';
+import {ImageModule} from 'primeng/image';
+import {CarouselModule} from 'primeng/carousel';
 
 @NgModule({
   declarations: [
@@ -21,12 +30,21 @@ import { SliderComponent } from './components/slider/slider.component';
     MoviesComponent,
     TvShowsComponent,
     GenresComponent,
-    SliderComponent
+    SliderComponent,
+    ItemsBannerComponent,
+    MovieItemComponent,
+    MovieComponent,
+    VideoEmbedComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    PaginatorModule,
+    TabViewModule,
+    ImageModule,
+    CarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]
